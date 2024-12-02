@@ -156,7 +156,7 @@ all_adp |>
     extensions = list(Scroller=list()),
     initComplete = JS(
       "function(settings, json) {",
-      "$(this.api().table().header()).css({'background-color': 'darkgray', 'color': 'white'});",
+      "$(this.api().table().header()).css({'background-color': 'black', 'color': 'white'});",
       "}"),
     scrollY=200,
     scrollCollapse = TRUE
@@ -169,10 +169,11 @@ all_adp |>
   formatPercentage('rank_difference', 0) 
 
 
-###now that we have everything, set up a table for 12 picks at a time for all
-###identify them as fine (-10-10%), priority targets(10+,20+,30+), and when they slip picks (-10,-20,-30)
-###add in a simulation factor of the points (with a random number between -.2 and .2 so you're looking at range of outcomes)
 ###figure out how to give projected adp for total batters and pitchers, maybe add in number of pitchers above, but how can we show that
 ###try to say where a guy becomes draftable
 ###map the steamer rank to determine where each player would be going, where the corresponding position would be picked
-###color the table based on which bucket they belong in
+###see if we can automate pulling in projections using baseballr code, so we dont need to download and upload to git first
+###see if we can create table for ranks to upload via csv for live ranking
+###table cleanup and formatting
+###list out which teams have good/bad late options for stacking
+###guys in the 120+ range with 2+ guys as positive values
