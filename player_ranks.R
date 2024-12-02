@@ -1,6 +1,6 @@
 library(tidyverse)
 library(dplyr)
-library(duckplyr)
+library(tidytable)
 library(janitor)
 library(stringi)
 library(scales)
